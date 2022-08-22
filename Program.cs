@@ -1,5 +1,6 @@
 ﻿
-/*Console.WriteLine("Введите число a");
+//Задача 2
+Console.WriteLine("Введите число a");
 int a = Int32.Parse(Console.ReadLine());
 
 
@@ -14,6 +15,9 @@ else
 {
     Console.WriteLine("Число " + b + " больше");
 }
+
+//Задача 4
+
 int max = 0;
 
 Console.WriteLine("Введите число a");
@@ -36,6 +40,7 @@ if (c > max)
 }
 Console.WriteLine("Число " + max + " больше");
 
+//Задача 6
 
 Console.WriteLine("Введите число ");
 double a = Int32.Parse(Console.ReadLine());
@@ -48,6 +53,9 @@ else
     Console.WriteLine("Число не четное");
 }
 
+
+//Задача 8
+
 Console.WriteLine("Введите число ");
 int a = Int32.Parse(Console.ReadLine());
 
@@ -56,34 +64,5 @@ for (int i = 1; i <= a; i++)
     if (i % 2! < 1)
     {
         Console.WriteLine(i + " Число четное");
-    }
-}
-*/
-
-
-
-using System;
-
-namespace Practice1
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            int people;
-            int fixedWaitingTime = 10;
-            int waitingTimeMinutes;
-            int waitingTimeHour;
-            int amountOfTime;
-
-            Console.Write("Сколько людей перед собой в очереди вы видите? ");
-            people = Convert.ToInt32(Console.ReadLine());
-
-            amountOfTime = people * fixedWaitingTime;
-            waitingTimeMinutes = amountOfTime % 60;
-            waitingTimeHour = amountOfTime / 60;
-
-            Console.WriteLine("Вы должны стоять в очереди " + waitingTimeHour + " часов " + waitingTimeMinutes + " минут");
-        }
     }
 }
