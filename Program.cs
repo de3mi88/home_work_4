@@ -1,14 +1,14 @@
 ﻿
-/*Задача 10
+//Задача 10
 
 Console.WriteLine("Введите трехзначное число");
 string number = Console.ReadLine();
 
-Console.WriteLine(number[1]);*/
+Console.WriteLine(number[1]);
 
 //Задача 13
 
-/*Console.WriteLine("Введите число");
+Console.WriteLine("Введите число");
 string number = Console.ReadLine();
 
 if (number.Length > 2)
@@ -18,7 +18,7 @@ if (number.Length > 2)
 else
 {
     Console.WriteLine("третьей цифры нет");
-}*/
+}
 
 //Задача 13
 
