@@ -1,68 +1,67 @@
 ﻿
-//Задача 2
-Console.WriteLine("Введите число a");
-int a = Int32.Parse(Console.ReadLine());
+/*Задача 10
 
+Console.WriteLine("Введите трехзначное число");
+string number = Console.ReadLine();
 
-Console.WriteLine("Введите число b");
-int b = Int32.Parse(Console.ReadLine());
+Console.WriteLine(number[1]);*/
 
-if (a > b)
+//Задача 13
+
+/*Console.WriteLine("Введите число");
+string number = Console.ReadLine();
+
+if (number.Length > 2)
 {
-    Console.WriteLine("Число " + a + " больше");
+    Console.WriteLine(number[2]);
 }
 else
 {
-    Console.WriteLine("Число " + b + " больше");
-}
+    Console.WriteLine("третьей цифры нет");
+}*/
 
-//Задача 4
+//Задача 13
 
-int max = 0;
 
-Console.WriteLine("Введите число a");
-int a = Int32.Parse(Console.ReadLine());
 
-Console.WriteLine("Введите число b");
-int b = Int32.Parse(Console.ReadLine());
+Console.WriteLine("Введите число обозначающее день недели");
+Console.WriteLine("1 - Понедельник");
+Console.WriteLine("2 - Вторник");
+Console.WriteLine("3 - Среда");
+Console.WriteLine("4 - Четверг");
+Console.WriteLine("5 - Пятница");
+Console.WriteLine("6 - Суббота");
+Console.WriteLine("7 - Воскресение");
+Console.WriteLine("8 - Выход");
 
-Console.WriteLine("Введите число c");
-int c = Int32.Parse(Console.ReadLine());
+int userInput = Convert.ToInt32(Console.ReadLine());
 
-max = a;
-
-if (b > a)
-    max = b;
-if (c > max)
+switch (userInput)
 {
-    max = c;
-
+    case 1:
+        Console.WriteLine("Это не выходной");
+        break;
+    case 2:
+        Console.WriteLine("Это не выходной");
+        break;
+    case 3:
+        Console.WriteLine("Это не выходной");
+        break;
+    case 4:
+        Console.WriteLine("Это не выходной");
+        break;
+    case 5:
+        Console.WriteLine("Это не выходной");
+        break;
+    case 6:
+        Console.WriteLine("Это выходной");
+        break;
+    case 7:
+        Console.WriteLine("Это выходной");
+        break;
+    case 8:
+        break;
 }
-Console.WriteLine("Число " + max + " больше");
-
-//Задача 6
-
-Console.WriteLine("Введите число ");
-double a = Int32.Parse(Console.ReadLine());
-if (a % 2! < 1)
-{
-    Console.WriteLine("Число четное");
-}
-else
-{
-    Console.WriteLine("Число не четное");
-}
-
-
-//Задача 8
-
-Console.WriteLine("Введите число ");
-int a = Int32.Parse(Console.ReadLine());
-
-for (int i = 1; i <= a; i++)
-{
-    if (i % 2! < 1)
-    {
-        Console.WriteLine(i + " Число четное");
-    }
-}
+Console.WriteLine("Нажмите ENTER для выхода");
+Console.ReadKey();
+Console.Clear();
